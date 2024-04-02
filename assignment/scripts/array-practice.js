@@ -109,7 +109,9 @@ console.log('The animals are now', animalArray);
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
 
-
+let firstColor = colors.shift()
+console.log('Removed first color, here is the colors:' , colors); //Confirmed 'orange' is removed
+console.log('And here is the first color!' , firstColor); //confirmed 'orange' is the shifted color
 
 
 // STRETCH GOALS:
@@ -118,7 +120,12 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
-
+// let indexToReplace = 1;
+// let newGem = 'Tourmaline';
+// gems[indexToReplace] = newGem;
+let newerGem =
+gems[1] = newerGem;
+console.log(gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
