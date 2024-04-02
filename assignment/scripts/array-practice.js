@@ -141,7 +141,7 @@ console.log('The gems in reverse alphabetical order are:', reverseSortGems);
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
 // let gemString = gems.toString(); -Testing, but not the way to go
-let gemString = gems.join(' and ')
+let gemString = gems.join(' and ');
 console.log('The gems should be more readable now: ' , gemString);
 
 
@@ -151,8 +151,8 @@ console.log('The gems should be more readable now: ' , gemString);
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
 
-
-
+let colorfulGems = gems.concat(colors);
+console.log('The gems and colors together display:' , colorfulGems)
 
 // DO NOT MODIFY
 // Used for automated testing
