@@ -123,14 +123,16 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 // let indexToReplace = 1;
 // let newGem = 'Tourmaline';
 // gems[indexToReplace] = newGem;
-let newerGem =
+let newerGem = 'Tourmaline';
 gems[1] = newerGem;
-console.log(gems);
+console.log('Updated Gems list is: ', gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
-
-
+let sortedGems = gems.sort() //made the gems alphabetical
+let reverseSortGems = sortedGems.reverse() //reversed the existing sort so we should see reverse alphabetical
+console.log ('The alphabetical gems are:', sortedGems);
+console.log('The gems in reverse alphabetical order are:', reverseSortGems);
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
 //     that's made up of each value from the `gems` array, but separated by the
 //     word "and".
@@ -138,6 +140,9 @@ console.log(gems);
 //       "Emerald and Diamond and Tourmaline and Topaz"
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
+// let gemString = gems.toString(); -Testing, but not the way to go
+let gemString = gems.join(' and ')
+console.log('The gems should be more readable now: ' , gemString);
 
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
